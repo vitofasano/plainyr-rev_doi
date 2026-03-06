@@ -1,7 +1,11 @@
 %% 2026-03-06
 %% Version 0.2.1: Improved DOI robustness. 
-%% Added check for hyperref package; if missing, falls back to safe texttt format to prevent 'undefined control sequence' errors. 
-%% Updated DOI URL to https://doi.org/.
+%% - Added a check for the 'hyperref' package.
+%% - If 'hyperref' is loaded, DOIs are clickable and handle underscores via \nolinkurl.
+%% - If 'hyperref' is missing, it falls back to a safe \texttt format.
+%% - NOTE: Using \usepackage{hyperref} in your .tex preamble is highly recommended 
+%%   for the best visual and functional results.
+%% - Updated DOI URL to https://doi.org/.
 %% ---------------------------------------------------------------------------------
 %% 2026-03-05
 %% Updated to version 0.2: 
@@ -1359,6 +1363,7 @@ FUNCTION {end.bib}
 }
 
 EXECUTE {end.bib}
+
 
 
 
