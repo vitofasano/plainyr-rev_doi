@@ -28,3 +28,14 @@ Feel free to open issues or pull requests to improve this style!
 
 ## License
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## Roadmap
+- [x] Rename project to `plainyr-rev-modern` (v0.2.3)
+- [x] Add reverse chronological sorting by default
+- [x] Improved DOI support with underscore handling
+- [x] Added `examples/` folder with test suite
+- [ ] Add `URL` field support
+- [ ] Add optional `abstract` field display
+- [ ] Implement author name cleaning/abbreviation (e.g., "V. Fasano")
+- [ ] Add toggle for normal vs. reverse chronological sorting
+- [ ] Final rebranding to `plainyr-modern`
